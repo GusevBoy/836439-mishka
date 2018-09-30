@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктор Гусев](https://up.htmlacademy.ru/adaptive/15/user/836439).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений  Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
