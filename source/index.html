@@ -5,8 +5,191 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="header">
+      <img src="http://placehold.it/90x35" alt="" class="header__logo">
+      <a href="#" class="header__menu">
+        <span class="header__menu_gamburger"></span> <!-- Думаю через псевдоклассы сделать бургер-->
+      </a>
+      <nav class="site-nav">
+        <div class="site-nav__item">
+          Каталог товаров
+        </div>
+        <div class="site-nav__item">
+          Вязание на заказ
+        </div>
+        <div class="site-nav__item site-nav__item_search">
+          Поиск по сайту
+        </div>
+        <div class="site-nav__item site-nav__item_basket">
+          Корзина: пока пуста
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="welcome welcome_small-house"> <!-- Может через  section? -->
+        <h1 class="welcome__title">
+          Милые штуки ручной работы для дома
+        </h1>
+      </div>
+      <nav class="goods-nav">
+        <a href="#" class="goods-nav__button goods-nav__button_seafoam goods-nav__button_lamp">
+          <h3 class="goods-nav__title">
+            Предметы интерьера
+          </h3>
+        </a>
+        <a href="#" class="goods-nav__button goods-nav__button_greeny goods-nav__button_lego">
+          <h3 class="goods-nav__title">
+            Детские игрушки
+          </h3>
+        </a>
+      </nav>
+      <section class="goods-best">
+        <h2 class="goods-best__title title">
+          Вязаные корзинки
+        </h2>
+        <p class="goods-best__subtitle">ТОВАР НЕДЕЛИ</p>
+        <p class="goods-best__desc">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <div class="goods-best__details details">
+          <div class="details__item">
+            <span class="details__info">Цвет:</span>
+            <span class="details__value">«Тиффани»/серый</span>
+          </div>
+          <div class="details__item">
+            <span class="details__info">Диаметр:</span>
+            <span class="details__value">25 см</span>
+          </div>
+          <div class="details__item">
+            <span class="details__info">Высота:</span>
+            <span class="details__value">15 см</span>
+          </div>
+        </div>
+        <div class="goods-best__item">
+          <img src="#" alt="" class="gods-best__img">
+          <span class="goods-best__price">Цена: 990 руб.</span>
+        </div>
+        <button class="goods-best__button button">
+          ЗАКАЗАТЬ
+        </button>
+        <!-- Модальное окно должно находится здесь ? -->
+        <div class="popup-adding hidden">
+          <h2 class="popup-adding__title title">
+            Добавить в корзину
+          </h2>
+          <p class="popup-adding__desc">
+            Выберите размер:
+          </p>
+          <div class="popup-adding__radio radio">
+            <label for="" class="radio__label radio__label_square">
+              <input class="radio__input" type="radio" name="size">
+              <span class="radio__desc">S</span>
+            </label>
+            <label for="" class="radio__label radio__label_square">
+              <input class="radio__input" type="radio" name="size">
+              <span class="radio__desc">M</span>
+            </label>
+            <label for="" class="radio__label radio__label_square">
+              <input class="radio__input" type="radio" name="size">
+              <span class="radio__desc">L</span>
+            </label>
+          </div>
+          <button class="popup-adding__button button_seafoam">
+            Добавить
+          </button>
+        </div>
+      </section>
+      <section class="about">
+        <h2 class="about__title title">
+          Коротко о нас:
+        </h2>
+        <!-- ВОЗМОЖНО, стоило добавлять картинку через фон, хочется сделать более гибко, так как я думаю эти элементы изменятся будут -->
+        <div class="about__item about__item_flower">
+          Экологически чистые материалы
+        </div>
+        <div class="about__item about__item_money">
+          Скандинавский стиль по российской цене
+        </div>
+        <div class="about__item about__item_heart">
+          Увеличивает лайки
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+          на фотографиях
+        </div>
+        <div class="about__item about__item_clew">
+          Связано вручную с любовью и умилением
+        </div>
+        <div class="about__item about__item_rocket">
+          Поддержка отечественного производителя
+        </div>
+        <div class="about__item about__item_present">
+          Поставляется в подарочной упаковке
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title title">
+          Отзывы
+        </h2>
+        <div class="reviews__comments comments">
+          <p class="comments__desc">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого
+             количества лайков, как у популярных инстамамочек. В отчаянии, я
+             накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
+             стали более стильными, а также набирают больше лайков!
+          </p>
+          <span class="comments__name">
+            Анастасия Красильникова
+          </span>
+          <span class="comments__login">
+            @misssssiskras
+          </span>
+        </div>
+        <div class="reviews__controls controls">
+          <button class="controls__button controls__button_left"></button>
+          <button class="controls__button controls__button_right"></button>
+        </div>
+        <a href="#" class="reviews__button button">
+          Написать
+        </a>
+      </section>
+      <section class="contacts">
+        <!-- !!!Необходимо поменять стили, так как title отличается -->
+        <h2 class="contacts__title"></h2>
+        <div class="contacts__item">
+          <span class="contacts__info">
+            e-mail:
+          </span>
+          <span class="contacrs__value">
+            info@mimimishkashop.ru
+          </span>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__info">
+            адрес:
+          </span>
+          <span class="contacrs__value">
+            г. Санкт-Петербург,
+            ул. Большая Конюшенная,
+            д. 19/8, офис 101
+          </span>
+        </div>
+        <div class="contacts__map">
+          <img src="http://placehold.it/320x457" alt="" class="contacts__img">
+        </div>
+        <a href="#" class="contacts__button button">
+          НАПИШИТЕ НАМ
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="social">
+        <img src="http://placehold.it/22x21" alt="" class="social__item">
+        <img src="http://placehold.it/22x21" alt="" class="social__item">
+        <img src="http://placehold.it/22x21" alt="" class="social__item">
+      </div>
+      <div class="signature">
+        <span class="signature__desc">Разработано</span>
+        <img src="http://placehold.it/27x34" alt="" class="signature__img">
+      </div>
+    </footer>
   </body>
 </html>
