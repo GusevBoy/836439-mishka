@@ -1,0 +1,20 @@
+.button {
+  color: $greyish;
+  border: solid 2px $greyish;
+  background-color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: $greyish;
+}
+
+.button:active {
+  background-color: $greyish;
+  color: fade-out(#fff,.3);
+}

@@ -1,0 +1,15 @@
+.mail-link {
+  color: $greyish;
+  font-size: 17px;
+  line-height: 30px;
+  border-bottom: 1px solid $seafoam;
+}
+
+.mail-link:hover {
+  color: $seafoam;
+}
+
+.mail-link:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+}

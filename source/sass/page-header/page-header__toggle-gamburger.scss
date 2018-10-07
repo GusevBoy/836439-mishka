@@ -1,0 +1,25 @@
+.page-header__toggle-gamburger {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+
+.page-header__toggle-gamburger::after,
+.page-header__toggle-gamburger::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  content: '';
+}
+
+.page-header__toggle-gamburger::after {
+  top: -7px;
+}
+.page-header__toggle-gamburger::before {
+  bottom: -7px;
+}
