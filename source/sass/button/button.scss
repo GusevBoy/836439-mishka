@@ -1,7 +1,7 @@
 .button {
   color: $greyish;
   border: solid 2px $greyish;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -11,11 +11,11 @@
 }
 
 .button:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: $greyish;
 }
 
 .button:active {
   background-color: $greyish;
-  color: fade-out(#fff,.3);
+  color: fade-out(#ffffff, 0.3);
 }

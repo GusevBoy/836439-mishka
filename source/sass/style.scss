@@ -1,19 +1,19 @@
-@font-face{
+@font-face {
   font-family: "opensans";
-  src: url('../fonts/opensans.woff');
+  src: url("../fonts/opensans.woff");
   font-weight: normal;
 }
 
-@font-face{
+@font-face {
   font-family: "opensans";
-  src: url('../fonts/opensansbold.woff');
+  src: url("../fonts/opensansbold.woff");
   font-weight: bold;
 }
 
-$black: #000;
-$black06: fade-out($black,.6);
-$black03: fade-out($black,.3);
-$white: #fff;
+$black: #000000;
+$black06: fade-out($black, 0.6);
+$black03: fade-out($black, 0.3);
+$white: #ffffff;
 $tear: #ececec;
 $greyish: #444444;
 $greyish-lite: rgba(68, 68, 68, 0.3);

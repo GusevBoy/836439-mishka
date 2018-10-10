@@ -3,7 +3,7 @@
   display: block;
   width: 20px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .page-header__toggle-gamburger::after,
@@ -13,13 +13,14 @@
   left: 0;
   width: 20px;
   height: 2px;
-  background-color: #000;
-  content: '';
+  background-color: #000000;
+  content: "";
 }
 
 .page-header__toggle-gamburger::after {
   top: -7px;
 }
+
 .page-header__toggle-gamburger::before {
   bottom: -7px;
 }
