@@ -3,6 +3,7 @@
   src: url('../fonts/opensans.woff');
   font-weight: normal;
 }
+
 @font-face{
   font-family: "opensans";
   src: url('../fonts/opensansbold.woff');
@@ -26,7 +27,7 @@ $blue-green: #149080;
 @import "hidden/hidden";
 @import "page/page";
 @import "container/container";
-@import "container/container__side";
+@import "container/container_side";
 @import "button/button";
 @import "link/link";
 @import "link/link_size-m";
@@ -45,7 +46,6 @@ $blue-green: #149080;
 @import "menu/menu__item_basket";
 @import "menu/menu__item_search";
 @import "welcome/welcome";
-@import "welcome/welcome_small-house";
 @import "goods-nav/goods-nav";
 @import "goods-nav/goods-nav__button";
 @import "goods-nav/goods-nav__button_greeny";
@@ -100,7 +100,6 @@ $blue-green: #149080;
 @import "contacts/contacts__img";
 @import "contacts/contacts__value_link";
 @import "social/social";
-@import "social/social__list";
 @import "social/social__item";
 @import "signature/signature";
 @import "signature/signature__img";

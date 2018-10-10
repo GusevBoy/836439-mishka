@@ -1,7 +1,10 @@
 .page-header {
-  position: relative;
   align-items: center;
-  padding: 21px 0 16px 0;
   border-top: 1px solid $tear;
-  border-bottom: 1px solid $tear;
+}
+
+.page-header__top {
+  padding-top: 21px;
+  margin-bottom: 22px;
+  position: relative;
 }

@@ -7,35 +7,39 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <header class="page-header container">
-      <a href="index.html" aria-label="Главная страница" class="page-header__logo">
-        <img src="img/logo-mobile.svg" alt="Добро пожаловать в магазин Мишка" width="86" height="35" class="page-header__logo-img">
-      </a>
-      <button href="#" class="page-header__toggle" type="button" name="button-menu">
-        <span class="page-header__toggle-gamburger"></span><!-- Думаю через псевдоклассы сделать бургер-->
-      </button>
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link link link_size-m">
-            Каталог товаров
-          <a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link link link_size-m">
-            Вязание на заказ
-          <a>
-        </li>
-        <li class="menu__item menu__item_search">
-          <a class="menu__link link link_size-m">
-            Поиск по сайту
-          <a>
-        </li>
-        <li class="menu__item menu__item_basket">
-          <a class="menu__link link link_size-m">
-            Корзина: пока пуста
-          <a>
-        </li>
-      </ul>
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__top">
+          <a href="index.html" aria-label="Главная страница" class="page-header__logo">
+            <img src="img/logo-mobile.svg" alt="Добро пожаловать в магазин Мишка" width="86" height="35" class="page-header__logo-img">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="page-header__toggle-gamburger"></span><!-- Думаю через псевдоклассы сделать бургер-->
+          </button>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link link link_size-m">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link link_size-m">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="menu__item menu__item_search">
+            <a class="menu__link link link_size-m">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="menu__item menu__item_basket">
+            <a class="menu__link link link_size-m">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main">
       <div class="welcome">
@@ -136,21 +140,23 @@
         <button class="form__button button" type="submit"></button>
       </form>
     </main>
-    <footer class="page-footer container">
-      <ul class="social__list">
-        <li class="social__item">
-          <img src="img/icon-insta.svg" alt="instagram" width="22" height="21" class="social__img">
-        </li>
-        <li class="social__item">
-          <img src="img/icon-fb.svg" alt="facebook" width="15" height="28" class="social__img">
-        </li>
-        <li class="social__item">
-          <img src="img/icon-twitter.svg" alt="twitter" width="23" height="20" class="social__img">
-        </li>
-      </ul>
-      <div class="signature">
-        <span class="signature__desc">Разработано!</span>
-        <img src="img/logo-htmlacademy.svg" alt="Добро пожаловать в академию" width="27" height="34" class="signature__img">
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="social">
+          <li class="social__item">
+            <img src="img/icon-insta.svg" alt="instagram" width="22" height="21" class="social__img">
+          </li>
+          <li class="social__item">
+            <img src="img/icon-fb.svg" alt="facebook" width="15" height="28" class="social__img">
+          </li>
+          <li class="social__item">
+            <img src="img/icon-twitter.svg" alt="twitter" width="23" height="20" class="social__img">
+          </li>
+        </ul>
+        <div class="signature">
+          <span class="signature__desc">Разработано!</span>
+          <img src="img/logo-htmlacademy.svg" alt="Добро пожаловать в академию" width="27" height="34" class="signature__img">
+        </div>
       </div>
     </footer>
   </body>
