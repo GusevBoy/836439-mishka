@@ -1,0 +1,9 @@
+.controls__button {
+  width: 50%;
+  height: 100%;
+  border: 1px solid $tear;
+}
+
+.controls__button:last-child {
+  border-left: 0;
+}

@@ -3,39 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="header">
-      <img src="http://placehold.it/90x35" alt="" class="header__logo">
-      <a href="#" class="header__menu">
-        <span class="header__menu_gamburger"></span> <!-- Думаю через псевдоклассы сделать бургер-->
-      </a>
-      <nav class="site-nav">
-        <div class="site-nav__item">
-          Каталог товаров
+  <body class="page">
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__top">
+          <a href="index.html" aria-label="Главная страница" class="page-header__logo">
+            <img src="img/logo-mobile.svg" alt="Добро пожаловать в магазин Мишка" width="86" height="35" class="page-header__logo-img">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="page-header__toggle-gamburger"></span><!-- Думаю через псевдоклассы сделать бургер-->
+          </button>
         </div>
-        <div class="site-nav__item">
-          Вязание на заказ
-        </div>
-        <div class="site-nav__item site-nav__item_search">
-          Поиск по сайту
-        </div>
-        <div class="site-nav__item site-nav__item_basket">
-          Корзина: пока пуста
-        </div>
-      </nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link link link_size-m">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link link_size-m">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="menu__item menu__item_search">
+            <a class="menu__link link link_size-m">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="menu__item menu__item_basket">
+            <a class="menu__link link link_size-m">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main">
-      <h1 class="main__title">Вязание на заказ</h1>
-      <form action="https://echo.htmlacademy.ru" class="orders">
-        <p class="orders__desc">
+      <div class="welcome">
+        <h1 class="page-title">
+          Вязание на заказ
+        </h1>
+      </div>
+      <form action="https://echo.htmlacademy.ru" class="form">
+        <p class="form__desc">
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами,
           чтобы уточнить детали.
         </p>
-        <fieldset class="orders__item">
-          <legend class="orders__title">ТИП</legend>
-          <div class="orders__radio radio">
+        <fieldset class="form__item">
+          <legend class="form__title">ТИП</legend>
+          <div class="form__radio radio">
             <label class="radio__label">
               <input class="radio__input" type="radio" name="types">
               <span class="radio__circle"></span>
@@ -50,9 +70,9 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="orders__item">
-          <legend class="orders__title">Цвет</legend>
-          <div class="orders__checkbox checkbox">
+        <fieldset class="form__item">
+          <legend class="form__title">Цвет</legend>
+          <div class="form__checkbox checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" name="colors">
               <span class="checkbox__min-square"></span>
@@ -85,53 +105,58 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="orders__item">
-          <legend class="orders__title"></legend>
-        </fieldset>
-        <fieldset class="orders__item">
-          <legend class="orders__title">ФИО</legend>
-          <div class="orders__name">
-            <span class="orders__info">Имя:</span>
-            <input type="text" value="name" class="orders__input" placeholder="Введите ваше имя*">
+        <fieldset class="form__item">
+          <legend class="form__title">ФИО</legend>
+          <div class="form__name">
+            <span class="form__info">Имя:</span>
+            <input type="text" value="name" class="form__input" placeholder="Введите ваше имя*">
           </div>
-          <div class="orders__name">
-            <span class="orders__info">Фамилия:</span>
-            <input type="text" value="surname" class="orders__input" placeholder="Укажите фамилию*">
+          <div class="form__name">
+            <span class="form__info">Фамилия:</span>
+            <input type="text" value="surname" class="form__input" placeholder="Укажите фамилию*">
           </div>
-          <div class="orders__name">
-            <span class="orders__info">Отчество:</span>
-            <input type="text" value="patronymic" class="orders__input" placeholder="Отчество, если желаете">
+          <div class="form__name">
+            <span class="form__info">Отчество:</span>
+            <input type="text" value="patronymic" class="form__input" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
-        <fieldset class="orders__item">
-          <legend class="orders__title">тел</legend>
-          <input type="text" value="phone" class="orders__input orders__icon_call" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <fieldset class="form__item">
+          <legend class="form__title">тел</legend>
+          <input type="text" value="phone" class="form__input form__input_call" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
-        <fieldset class="orders__item">
-          <legend class="orders__title">E-MAIL</legend>
-          <input type="email" value="email" class="orders__input orders__icon_mail" placeholder="Ваш Email*">
+        <fieldset class="form__item">
+          <legend class="form__title">E-MAIL</legend>
+          <input type="email" value="email" class="form__input form__input_mail" placeholder="Ваш Email*">
         </fieldset>
-        <fieldset class="orders__item">
-          <legend class="orders__title">ДОП</legend>
-          <textarea name="textarea" rows="8" cols="80" class="orders__textarea">
+        <fieldset class="form__item">
+          <legend class="form__title">ДОП</legend>
+          <textarea name="textarea" rows="8" cols="80" class="form__textarea">
             Опишите все ваши пожелания к заказу
           </textarea>
         </fieldset>
-        <p class="orders__note">
+        <p class="form__note">
           *Поля обязательны для заполнения
         </p>
-        <button class="orders__button button" type="submit"></button>
+        <button class="form__button button" type="submit"></button>
       </form>
     </main>
-    <footer class="footer">
-      <div class="social">
-        <img src="http://placehold.it/22x21" alt="" class="social__item">
-        <img src="http://placehold.it/22x21" alt="" class="social__item">
-        <img src="http://placehold.it/22x21" alt="" class="social__item">
-      </div>
-      <div class="signature">
-        <span class="signature__desc">Разработано!</span>
-        <img src="http://placehold.it/27x34" alt="" class="signature__img">
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="social">
+          <li class="social__item">
+            <img src="img/icon-insta.svg" alt="instagram" width="22" height="21" class="social__img">
+          </li>
+          <li class="social__item">
+            <img src="img/icon-fb.svg" alt="facebook" width="15" height="28" class="social__img">
+          </li>
+          <li class="social__item">
+            <img src="img/icon-twitter.svg" alt="twitter" width="23" height="20" class="social__img">
+          </li>
+        </ul>
+        <div class="signature">
+          <span class="signature__desc">Разработано!</span>
+          <img src="img/logo-htmlacademy.svg" alt="Добро пожаловать в академию" width="27" height="34" class="signature__img">
+        </div>
       </div>
     </footer>
   </body>
