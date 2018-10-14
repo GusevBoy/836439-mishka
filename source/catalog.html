@@ -42,52 +42,69 @@
       </div>
     </header>
     <main class="main">
-      <div class="welcome">
+      <div class="welcome welcome_common">
         <h1 class="page-title">
           Каталог товаров
         </h1>
       </div>
       <section class="goods">
-        <div class="goods__item">
-          <img src="http://placehold.it/260x195" alt="" class="goods__img">
-          <h3 class="goods__title">Зайчик-попрыгайчи</h3>
-          <p class="goods__details">Рост 30 см, вес 200 г</p>
-          <div class="goods__footer">
-            <span class="goods__price">1 200 руб.</span>
-            <img src="http://placehold.it/20x19" alt="" class="goods__icon goods__icon_basket">
+        <div class="container container_side">
+          <div class="goods__item">
+            <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" class="goods__img">
+            <div class="goods__content">
+              <h3 class="goods__title">Зайчик-попрыгайчик</h3>
+              <p class="goods__details">Рост 30 см, вес 200 г</p>
+              <div class="goods__footer">
+                <span class="goods__price">1 200 руб.</span>
+                <a href="#" class="goods__link">
+                  <img src="img/icon-cart.svg" width="20" height="19" alt="" class="goods__icon">
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="goods__item">
-          <img src="http://placehold.it/260x195" alt="" class="goods__img">
-          <h3 class="goods__title">Корзинка для белья</h3>
-          <p class="goods__details">Диаметр 15 см, высота 10 см</p>
-          <div class="goods__footer">
-            <span class="goods__price">690 руб.</span>
-            <img src="http://placehold.it/20x19" alt="" class="goods__icon goods__icon_basket">
+          <div class="goods__item">
+            <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="" class="goods__img">
+            <div class="goods__content">
+              <h3 class="goods__title">Корзинка для белья</h3>
+              <p class="goods__details">Диаметр 15 см, высота 10 см</p>
+              <div class="goods__footer">
+                <span class="goods__price">690 руб.</span>
+                <a href="#" class="goods__link">
+                  <img src="img/icon-cart.svg" width="20" height="19" alt="" class="goods__icon">
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="goods__item">
-          <img src="http://placehold.it/260x195" alt="" class="goods__img">
-          <h3 class="goods__title">Большая корзинка для игрушек</h3>
-          <p class="goods__details">Диаметр 30 см, высота 30 см</p>
-          <div class="goods__footer">
-            <span class="goods__price">1 500 руб.</span>
-            <img src="http://placehold.it/20x19" alt="" class="goods__icon goods__icon_basket">
+          <div class="goods__item">
+            <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="" class="goods__img">
+            <div class="goods__content">
+              <h3 class="goods__title">Большая корзинка для игрушек</h3>
+              <p class="goods__details">Диаметр 30 см, высота 30 см</p>
+              <div class="goods__footer">
+                <span class="goods__price">1 500 руб.</span>
+                <a href="#" class="goods__link">
+                  <img src="img/icon-cart.svg" width="20" height="19" alt="" class="goods__icon">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="creation">
-        <h3 class="creation__title creation__icon_camera">
+        <h3 class="creation__title creation__icon-camera">
           Процесс производства
         </h3>
-        <button class="creation__button">
-          <img src="http://placehold.it/260x150" alt="" class="creation__img-video">
-        </button>
+        <div class="creation__video">
+          <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="" creation__img-video>
+          <button class="creation__button-play">Play</button>
+        </div>
         <p class="creation__desc">
           По просьбам наших любимых фолловеров
           мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <button type="button" class="creation__button button">Play</button>
+        <a href="#" aria-label="Сделай заказ" class="creation__button button">
+          СДелать заказ
+        </a>
       </section>
     </main>
     <footer class="page-footer">

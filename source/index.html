@@ -2,39 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="container">
+      <div class="page-header__inner">
         <div class="page-header__top">
           <a href="index.html" aria-label="Главная страница" class="page-header__logo">
-            <img src="img/logo-mobile.svg" alt="Добро пожаловать в магазин Мишка" width="86" height="35" class="page-header__logo-img">
+            <picture>
+              <source media="(min-width: 772px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Добро пожаловать в магазин Мишка" class="page-header__logo-img">
+            </picture>
           </a>
           <button class="page-header__toggle" type="button">
             <span class="page-header__toggle-gamburger"></span><!-- Думаю через псевдоклассы сделать бургер-->
           </button>
         </div>
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link link link_size-m">
+        <ul class="page-header__site-nav site-nav">
+          <li class="site-nav__item">
+            <a href="catalog.html" class="site-nav__link link link_size-m">
               Каталог товаров
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link link link_size-m">
+          <li class="site-nav__item">
+            <a class="site-nav__link link link_size-m">
               Вязание на заказ
             </a>
           </li>
-          <li class="menu__item menu__item_search">
-            <a class="menu__link link link_size-m">
+        </ul>
+        <ul class="page-header__user-nav user-nav">
+          <li class="user-nav__item user-nav__item_search">
+            <a class="user-nav__link link link_size-m">
               Поиск по сайту
             </a>
           </li>
-          <li class="menu__item menu__item_basket">
-            <a class="menu__link link link_size-m">
+          <li class="user-nav__item user-nav__item_basket">
+            <a class="user-nav__link link link_size-m">
               Корзина: пока пуста
             </a>
           </li>
@@ -48,6 +55,9 @@
             <h1 class="page-title">
               Милые штуки ручной работы&nbsp;для&nbsp;дома
             </h1>
+            <p class="welcome__text">
+              Бесплатная доставка по России
+            </p>
           </div>
           <nav class="welcome__goods-nav goods-nav">
             <a href="#" aria-label="Предметы интерьера" class="goods-nav__button goods-nav__button_seafoam goods-nav__button_lamp">
@@ -83,7 +93,10 @@
             </div>
           </div>
           <div class="goods-best__item">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзины" class="goods-best__img">
+            <picture>
+              <source media="(min-width: 772px)" srcset="img/triple-set-tablet@1x.jpg">
+              <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзины" class="goods-best__img">
+            </picture>
             <span class="goods-best__price">Цена: 990 руб.</span>
           </div>
           <button class="goods-best__button button">

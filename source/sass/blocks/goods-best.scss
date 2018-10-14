@@ -1,0 +1,127 @@
+.goods-best {
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 6px solid $tear;
+  padding: 27px 30px 0 30px;
+}
+
+.goods-best__title {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.goods-best__subtitle {
+  color: $seafoam-blue;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+  margin-left: -1px;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+}
+
+.goods-best__desc {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.goods-best__details {
+  margin-bottom: 28px;
+}
+
+.goods-best__item {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.goods-best__img {
+  margin: 0 auto;
+  margin-bottom: 18px;
+  width: 260px;
+  height: 315px;
+}
+
+.goods-best__price {
+  display: block;
+  color: $greyish;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.goods-best__button {
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 772px) {
+
+  .goods-best {
+    padding-top: 46px;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -24px;
+      width: 100%;
+      height: 50px;
+      background-image: url(../img/zigzag-fill-desktop-svg.svg);
+      background-position: -63px 13px;
+      background-size: 100% 23px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .goods-best__title {
+    margin-bottom: 50px;
+  }
+
+  .goods-best__desc {
+    padding-right: 56%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 44px;
+  }
+
+  .goods-best__subtitle {
+    position: absolute;
+    max-width: 70px;
+    text-align: center;
+    line-height: 17px;
+    top: 10px;
+    right: 80px;
+  }
+
+  .goods-best__details {
+    max-width: 44%;
+    margin-bottom: 56px;
+  }
+
+  .goods-best__item {
+    max-width: 292px;
+  }
+
+  .goods-best__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
+  }
+
+  .goods-best__img {
+    position: absolute;
+    z-index: -1;
+    right: 51px;
+    top: 107px;
+    width: 333px;
+    height: 404px;
+  }
+
+  .goods-best__button {
+    max-width: 292px;
+  }
+}

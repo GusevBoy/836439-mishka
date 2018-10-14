@@ -1,0 +1,19 @@
+
+.container {
+  box-sizing: border-box;
+  max-width: 320px;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: 772px) {
+    max-width: 772px;
+  }
+  // border: 1px solid #41ff00;
+}
+
+.container_side {
+  padding: 0 30px;
+  @media (min-width: 772px) {
+    padding: 0 51px;
+  }
+}

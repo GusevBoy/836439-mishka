@@ -1,0 +1,44 @@
+
+.goods-nav__desc {
+  max-width: 106px;
+}
+
+.goods-nav__button {
+  display: block;
+  width: 100%;
+  padding: 6px 0 11px 29px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.goods-nav__button_lego {
+  background-image: url("../img/icon-toy.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+
+.goods-nav__button_lamp {
+  background-image: url("../img/icon-interior.svg");
+  background-position: 87% 55%;
+  background-repeat: no-repeat;
+}
+
+.goods-nav__button_seafoam {
+  background-color: $seafoam;
+}
+
+.goods-nav__button_greeny {
+  background-color: $greeny;
+}
+
+@media (min-width: 772px) {
+
+  .goods-nav__button {
+    width: 50%;
+    padding-bottom: 26px;
+  }
+}

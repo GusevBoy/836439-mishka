@@ -1,0 +1,27 @@
+.controls {
+  display: flex;
+}
+
+.controls__button {
+  width: 50%;
+  height: 100%;
+  border: 1px solid $tear;
+}
+
+.controls__button:last-child {
+  border-left: 0;
+}
+
+.controls__button_left,
+.controls__button_right {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.controls__button_left {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+ .controls__button_right {
+  background-image: url("../img/icon-right-arrow.svg");
+}

@@ -1,0 +1,112 @@
+.page-header {
+  align-items: center;
+  border-top: 1px solid $tear;
+  // margin-bottom: 37px;
+}
+
+.page-header__inner {
+  position: relative;
+  @include container;
+}
+
+.page-header__top {
+  padding: 21px 0 16px 0;
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 86px;
+  max-height: 35px;
+}
+
+.page-header__site-nav,
+.page-header__user-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header__toggle {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 40px;
+  margin: -10px 30px 0 0;
+  width: 20px;
+  padding: 7px 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+
+.page-header__toggle-gamburger {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.page-header__toggle-gamburger::after,
+.page-header__toggle-gamburger::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+}
+
+.page-header__toggle-gamburger::after {
+  top: -7px;
+}
+
+.page-header__toggle-gamburger::before {
+  bottom: -7px;
+}
+
+@media (min-width: 772px) {
+
+  .page-header__inner {
+    display: flex;
+  }
+
+  .page-header__top {
+    width: 372px;
+  }
+
+  .page-header__logo {
+    max-width: 114px;
+    max-height: 48px;
+    margin: 0 0 0 51px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__site-nav {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 18px 0 0 53px;
+    min-width: 372px;
+
+  }
+
+  .page-header__user-nav {
+    display: flex;
+    flex-grow: 1;
+  }
+
+}

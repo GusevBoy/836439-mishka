@@ -1,0 +1,18 @@
+.page-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #010000;
+  line-height: 30px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 32px 0 30px;
+  max-width: 260px;
+  @media (min-width: 772px) {
+    margin: 0;
+    color: #000000;
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 494px;
+  }
+}

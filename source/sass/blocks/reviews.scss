@@ -1,0 +1,23 @@
+.reviews {
+  border-bottom: 6px solid $tear;
+}
+
+.reviews__slider {
+  margin-bottom: 29px;
+}
+
+.reviews__title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.reviews__button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 14px 0;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 45px;
+}

@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 23px;
+  padding: 25px 0 21px 0;
+  border-bottom: 1px solid $tear;
+}
+
+.social__item {
+  margin-left: 40px;
+}
+
+.social__item:first-child {
+  margin-left: 0;
+}
+
+.social__item:last-child {
+  margin-left: 37px;
+}
