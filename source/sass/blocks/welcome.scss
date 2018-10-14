@@ -4,7 +4,7 @@
 }
 
 .welcome_common {
-  padding: 71px 0 76px 0;;
+  padding: 71px 0 76px 0;
 }
 
 .welcome__fond {
@@ -24,11 +24,10 @@
   padding: 18px 51px 0 0;
   color: $greyish;
   font-size: 15px;
-  line-height: 24px
+  line-height: 24px;
 }
 
 @media (min-width: 772px) {
-
   .welcome__fond {
     padding: 155px 0 0 0;
     min-height: 472px;
@@ -41,5 +40,4 @@
     display: flex;
     margin: 0 52px;
   }
-
 }

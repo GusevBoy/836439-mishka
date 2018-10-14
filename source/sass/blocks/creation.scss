@@ -1,12 +1,13 @@
 .creation {
   box-sizing: border-box;
-  @include container;
   border: 1px solid $tear;
   margin-bottom: 57px;
+
+  @include container;
 }
 
 .creation__icon-camera {
-  background-image: url(../img/icon-video.svg);
+  background-image: url("../img/icon-video.svg");
   background-position: 34px 46%;
   background-repeat: no-repeat;
 }
@@ -37,7 +38,7 @@
   right: 0;
   left: 0;
   margin: -45px auto 0 auto;
-  background-image: url(../img/icon-play.svg);
+  background-image: url("../img/icon-play.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
