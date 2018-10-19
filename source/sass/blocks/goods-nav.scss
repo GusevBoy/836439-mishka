@@ -38,6 +38,20 @@
 @media (min-width: 772px) {
   .goods-nav__button {
     width: 50%;
-    padding-bottom: 26px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 8px 0 10px 36px;
+  }
+
+  .goods-nav__button_lamp {
+    background-position: 88% 51%;
+  }
+
+  .goods-nav__button_lego {
+    background-position: 88% 52%;
+  }
+
+  .goods-nav__desc {
+    max-width: 90px;
   }
 }

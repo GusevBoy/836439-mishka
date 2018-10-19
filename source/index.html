@@ -9,6 +9,9 @@
 
   </head>
   <body class="page">
+    <svg class="svg"  id="icon">
+      <path fill="fff" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+    </svg>
     <header class="page-header">
       <div class="page-header__inner">
         <div class="page-header__top">
@@ -25,24 +28,27 @@
         <ul class="page-header__site-nav site-nav">
           <li class="site-nav__item">
             <a href="catalog.html" class="site-nav__link link link_size-m">
-              Каталог товаров
+              <span class="site-nav__text">Каталог товаров</span>
             </a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link link link_size-m">
-              Вязание на заказ
+              <span class="site-nav__text">Вязание на заказ</span>
             </a>
           </li>
         </ul>
         <ul class="page-header__user-nav user-nav">
           <li class="user-nav__item user-nav__item_search">
             <a class="user-nav__link link link_size-m">
-              Поиск по сайту
+              <span class="user-nav__text">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-nav__item user-nav__item_basket">
             <a class="user-nav__link link link_size-m">
-              Корзина: пока пуста
+              <span class="user-nav__text">Корзина: пока пуста</span>
+              <svg class="svg1" width="300" height="300" fill="currentColor">
+          <use xlink:href="#icon"></use>
+          </svg>
             </a>
           </li>
         </ul>
@@ -160,7 +166,7 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="container container_side">
+        <div class="reviews__inner">
           <h2 class="reviews__title title">
             Отзывы
           </h2>
@@ -190,30 +196,34 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
+        <div class="contacts__inner">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__item">
-            <span class="contacts__info">
-              e-mail:
-            </span>
-            <a class="contacts__value contacts__value_link mail-link">
-              info@mimimishkashop.ru
-            </a>
-          </div>
-        <!-- Почему то не сработал last-child, пока поставил margin-top у map -->
-          <div class="contacts__item">
-            <span class="contacts__info">
-              адрес:
-            </span>
-            <span class="contacts__value">
-              г. Санкт-Петербург,
-              ул.Большая Конюшенная,
-              д.&nbsp;19/8,&nbsp;офис 101
-            </span>
-          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__info">
+                e-mail:
+              </span>
+              <a class="contacts__value contacts__value_link mail-link">
+                info@mimimishkashop.ru
+              </a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__info">
+                адрес:
+              </span>
+              <span class="contacts__value">
+                г. Санкт-Петербург,
+                ул.Большая Конюшенная,
+                д.&nbsp;19/8,&nbsp;офис 101
+              </span>
+            </li>
+          </ul>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" alt="Найдете нас здесь" width="320" height="457"  class="contacts__img">
+          <picture class="contacts__picture">
+            <source media="(min-width: 772px)" srcset="img/map-tablet@1x.jpg">
+              <img src="img/map-mobile@1x.jpg" alt="Найдете нас здесь" class="contacts__img">
+          </picture>
         </div>
         <a href="#" class="contacts__button button">
           НАПИШИТЕ НАМ

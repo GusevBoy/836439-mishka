@@ -1,11 +1,25 @@
 @mixin container {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 260px;
+  // max-width: 260px;
 
   @media (min-width: 772px) {
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 772px;
+  }
+}
+
+@mixin container_side {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 0 30px;
+
+  @media (min-width: 772px) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 772px;
+    padding: 0 51px;
   }
 }

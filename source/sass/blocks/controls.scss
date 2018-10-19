@@ -25,3 +25,10 @@
 .controls__button_right {
   background-image: url("../img/icon-right-arrow.svg");
 }
+
+@media (min-width: 772px) {
+  .controls__button {
+    border: 0;
+    background-color: transparent;
+  }
+}

@@ -32,3 +32,32 @@
   line-height: 24px;
   text-align: left;
 }
+
+@media (min-width: 772px) {
+  .slider__desc {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 56px;
+  }
+
+  .slider__name {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .slider__name,
+  .slider__login {
+    display: block;
+    max-width: 50%;
+  }
+
+  .slider__controls {
+    position: absolute;
+    max-width: 170px;
+    margin: 0;
+    right: 55px;
+    top: 100%;
+    margin-top: -101px;
+  }
+}

@@ -7,11 +7,16 @@
   margin-left: -2px;
 }
 
+.about__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .about__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .about__item {
@@ -21,22 +26,10 @@
   font-weight: bold;
   line-height: 20px;
   margin-bottom: 28px;
-}
 
-.about__item:last-child {
-  margin-bottom: 0;
-}
-
-.about__item_clew {
-  background-image: url("../img/icon-feature-ball.svg");
-  background-position: 3px 3px;
-  background-repeat: no-repeat;
-}
-
-.about__item_heart {
-  background-image: url("../img/icon-feature-heart.svg");
-  background-position: 7px 6px;
-  background-repeat: no-repeat;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .about__item_flower {
@@ -51,9 +44,15 @@
   background-repeat: no-repeat;
 }
 
-.about__item_present {
-  background-image: url("../img/icon-feature-gift.svg");
-  background-position: 3px 2px;
+.about__item_heart {
+  background-image: url("../img/icon-feature-heart.svg");
+  background-position: 7px 6px;
+  background-repeat: no-repeat;
+}
+
+.about__item_clew {
+  background-image: url("../img/icon-feature-ball.svg");
+  background-position: 3px 3px;
   background-repeat: no-repeat;
 }
 
@@ -61,4 +60,65 @@
   background-image: url("../img/icon-feature-rocket.svg");
   background-position: -5px 5px;
   background-repeat: no-repeat;
+}
+
+.about__item_present {
+  background-image: url("../img/icon-feature-gift.svg");
+  background-position: 3px 2px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 772px) {
+  .about {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about__container {
+    flex-direction: row;
+  }
+
+  .about__title {
+    margin-bottom: 49px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .about__item {
+    padding-right: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 54px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item_flower {
+    order: 1;
+  }
+
+  .about__item_money {
+    order: 3;
+  }
+
+  .about__item_heart {
+    order: 5;
+  }
+
+  .about__item_clew {
+    order: 2;
+  }
+
+  .about__item_rocket {
+    order: 4;
+  }
+
+  .about__item_present {
+    order: 6;
+  }
 }

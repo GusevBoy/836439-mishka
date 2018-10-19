@@ -1,7 +1,6 @@
 .site-nav__item {
   width: 100%;
   box-sizing: border-box;
-  padding: 28px 0 26px 76px;
   border-top: 1px solid $tear;
   text-align: left;
 }
@@ -11,12 +10,28 @@
 }
 
 .site-nav__link {
+  display: block;
   color: #000000;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
   text-decoration: none;
   cursor: pointer;
+  padding: 28px 0 26px 76px;
+  margin: 0 -30px;
+}
+
+.svg1 {
+  color: #447744;
+  :hover {
+    color: #123f45;
+  }
+}
+
+.site-nav__text {
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width: 772px) {
