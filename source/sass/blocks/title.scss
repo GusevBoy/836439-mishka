@@ -4,12 +4,16 @@
   font-weight: bold;
   line-height: 30px;
   margin: 0;
-}
 
-@media (min-width: 772px) {
-  .title {
+  @media (min-width: 768px) {
     font-size: 43px;
     line-height: 50px;
     max-width: 430px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 600px;
   }
 }

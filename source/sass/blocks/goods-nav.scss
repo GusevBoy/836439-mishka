@@ -1,54 +1,90 @@
 
 .goods-nav__desc {
   max-width: 106px;
+  color: #ffffff;
+}
+
+.goods-nav__button:hover .goods-nav__desc {
+  color: #ffffff;
+}
+
+.goods-nav__button:active .goods-nav__desc {
+  color: rgba(#ffffff, 0.3);
 }
 
 .goods-nav__button {
   display: block;
+  position: relative;
   width: 100%;
   padding: 6px 0 11px 29px;
-  color: #ffffff;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
   text-decoration: none;
   box-sizing: border-box;
+  color: rgba(#149080, 0.5);
+
+  &:hover {
+    color: rgba(#149080, 0.7);
+  }
+
+  &:active {
+    color: rgba(#149080, 0.3);
+  }
 }
 
-.goods-nav__button_lego {
-  background-image: url("../img/icon-toy.svg");
-  background-position: 90% 50%;
-  background-repeat: no-repeat;
-}
-
-.goods-nav__button_lamp {
-  background-image: url("../img/icon-interior.svg");
-  background-position: 87% 55%;
-  background-repeat: no-repeat;
-}
-
+// .goods-nav__button_lego {
+//   background-image: url("../img/icon-toy.svg");
+//   background-position: 90% 50%;
+//   background-repeat: no-repeat;
+//   color: #149080;
+// }
+//
+// .goods-nav__button_lamp {
+//   background-image: url("../img/icon-interior.svg");
+//   background-position: 87% 55%;
+//   background-repeat: no-repeat;
+//   color: #149080;
+// }
+//
 .goods-nav__button_seafoam {
   background-color: $seafoam;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:active {
+    background-color: #59d5bc;
+  }
 }
 
 .goods-nav__button_greeny {
   background-color: $greeny;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+  }
 }
 
-@media (min-width: 772px) {
+.goods-nav__svg {
+  position: absolute;
+  right: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+@media (min-width: 768px) {
   .goods-nav__button {
     width: 50%;
     font-size: 20px;
     line-height: 30px;
     padding: 8px 0 10px 36px;
-  }
-
-  .goods-nav__button_lamp {
-    background-position: 88% 51%;
-  }
-
-  .goods-nav__button_lego {
-    background-position: 88% 52%;
   }
 
   .goods-nav__desc {

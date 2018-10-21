@@ -6,10 +6,23 @@
   width: 50%;
   height: 100%;
   border: 1px solid $tear;
+  color: #000000;
+
+  &:hover {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
 }
 
 .controls__button:last-child {
   border-left: 0;
+}
+
+.controls__svg {
+  color: inherit;
 }
 
 .controls__button_left,
@@ -26,7 +39,7 @@
   background-image: url("../img/icon-right-arrow.svg");
 }
 
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .controls__button {
     border: 0;
     background-color: transparent;

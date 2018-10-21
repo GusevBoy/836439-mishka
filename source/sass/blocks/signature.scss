@@ -1,16 +1,47 @@
 .signature {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  color: #000000;
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
 }
 
 .signature__desc {
-  color: #000000;
   font-size: 19px;
   font-weight: bold;
   line-height: 20px;
   margin-top: 4px;
 }
 
-.signature__img {
+.signature__svg {
   margin-left: 24px;
+  overflow: visible;
+  color: $seafoam;
+}
+
+.signature:hover .signature__svg {
+  color: #46c1ae;
+}
+
+.signature:active .signature__svg {
+  color: rgba(#46c1ae, 0.3);
+}
+
+@media (min-width: 768px) {
+  .signature {
+    padding-top: 8px;
+  }
+
+  .signature__desc {
+    margin-top: 3px;
+  }
+
+  .signature__svg {
+    width: 31px;
+    height: 37px;
+    margin-left: 28px;
+  }
 }

@@ -7,30 +7,44 @@
   padding: 71px 0 76px 0;
 }
 
+.welcoe__inner {
+  @include container;
+}
+
 .welcome__fond {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -127px -18px;
+  background-position: top center;
   padding-top: 70px;
   padding-bottom: 122px;
   // border-top: 1px solid #ededed;
 }
 
-.welcome__text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  padding: 18px 51px 0 0;
-  color: $greyish;
-  font-size: 15px;
-  line-height: 24px;
-}
+@media (min-width: 768px) {
+  .welcome {
+    position: relative;
+    margin-bottom: 46px;
 
-@media (min-width: 772px) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/zigzag-fill-desktop-svg.svg");
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: repeat;
+    }
+  }
+
   .welcome__fond {
     padding: 155px 0 0 0;
-    min-height: 472px;
+    min-height: 471px;
     background-position: center top;
     background-size: auto;
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -38,6 +52,28 @@
 
   .welcome__goods-nav {
     display: flex;
-    margin: 0 52px;
+    margin: 0 50px;
+  }
+
+  .welcome_common {
+    padding: 96px 0 81px 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .welcome {
+    margin-bottom: 72px;
+
+    &::after {
+      bottom: -19px;
+      height: 34px;
+      background-size: auto;
+      background-repeat: repeat;
+    }
+  }
+
+  .welcome__goods-nav {
+    display: flex;
+    margin: 0 100px;
   }
 }

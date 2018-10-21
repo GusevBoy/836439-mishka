@@ -2,3 +2,50 @@
   background-color: rgb(241, 241, 242);
   padding-bottom: 31px;
 }
+
+.page-footer__inner {
+  @include container;
+}
+
+.page-footer__link {
+  color: #000000;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(#46c1ae, 0.3);
+  }
+}
+
+.page-footer__logo {
+  width: 102px;
+  height: 34px;
+  display: none;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    padding: 0;
+  }
+
+  .page-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 51px 46px 0 51px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+// .page-footer__logo {
+//   width: 149px;
+//   height: 72px;
+//   margin: 0 0 0 33px;
+//   padding: 8px 0 16px 78px;
+// }

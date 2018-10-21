@@ -1,12 +1,18 @@
 @mixin container {
   box-sizing: border-box;
   margin: 0 auto;
-  // max-width: 260px;
+  max-width: 260px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 772px;
+    max-width: 768px;
+  }
+
+  @media (min-width: 1150px) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1150px;
   }
 }
 

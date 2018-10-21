@@ -1,18 +1,27 @@
 .creation {
   box-sizing: border-box;
-  border: 1px solid $tear;
-  margin-bottom: 57px;
 
+  margin-bottom: 57px;
+}
+
+.creation__inner {
   @include container;
 }
 
-.creation__icon-camera {
-  background-image: url("../img/icon-video.svg");
-  background-position: 34px 46%;
-  background-repeat: no-repeat;
+.creation-video {
+  display: block;
+}
+
+.creation__icon {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 32px;
+  top: 30px;
 }
 
 .creation__title {
+  position: relative;
   color: #000000;
   font-size: 17px;
   font-weight: bold;
@@ -62,4 +71,49 @@
   margin: 0 auto;
   padding: 14px 0;
   margin-bottom: 33px;
+}
+
+@media (min-width: 768px) {
+  .creation {
+    border: 0;
+    margin-bottom: 62px;
+  }
+
+  .creation__icon {
+    left: 42px;
+    top: 8px;
+  }
+
+  .creation__inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 668px;
+    border: 1px solid $tear;
+  }
+
+  .creation__video {
+    order: -1;
+  }
+
+  .creation__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 13px 0 32px 107px;
+  }
+
+  .creation__desc {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .creation__img {
+    width: 668px;
+    height: 455px;
+  }
+
+  .creation__button {
+    min-width: 584px;
+    margin-bottom: 45px;
+  }
 }
