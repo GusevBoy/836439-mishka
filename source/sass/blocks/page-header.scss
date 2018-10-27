@@ -2,6 +2,7 @@
   align-items: center;
   border-top: 1px solid $tear;
   // margin-bottom: 37px;
+  margin-bottom: 7px;
 }
 
 .page-header__inner {
@@ -84,6 +85,10 @@
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    margin-bottom: 0;
+  }
+
   .page-header__inner {
     display: flex;
   }

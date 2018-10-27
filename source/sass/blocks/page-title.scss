@@ -6,8 +6,8 @@
   font-size: 27px;
   font-weight: bold;
   text-align: center;
-  margin: 0 32px 0 30px;
-  max-width: 260px;
+  margin: 0 30px;
+  padding-bottom: 121px;
 }
 
 @media (min-width: 768px) {
@@ -17,6 +17,7 @@
     font-size: 43px;
     line-height: 50px;
     max-width: 500px;
+    padding-bottom: 374px;
   }
 }
 
@@ -26,5 +27,6 @@
     font-size: 53px;
     line-height: 57px;
     max-width: 700px;
+    padding-bottom: 359px;
   }
 }

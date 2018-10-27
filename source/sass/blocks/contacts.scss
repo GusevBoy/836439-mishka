@@ -63,7 +63,7 @@
 
 .contacts__map {
   max-height: 457px;
-  margin-top: 37px;
+  margin: 0 -30px;
   margin-bottom: 39px;
   background-color: #f3e8d9;
 }
@@ -71,7 +71,6 @@
 .contacts__img {
   margin: 0 auto;
   display: block;
-  width: 320px;
   height: 457px;
 }
 
@@ -125,8 +124,7 @@
   }
 
   .contacts__map {
-    margin-top: 0;
-    margin-bottom: 55px;
+    margin: 0 -50px 55px -50px;
   }
 
   .contacts__img {
@@ -186,7 +184,7 @@
   .contacts__map {
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 0;
     margin: 0;
     z-index: -2;
   }
@@ -197,7 +195,7 @@
   }
 
   .contacts__button {
-    min-width: 230px;
-    margin: 0 0 0 53px;
+    min-width: auto;
+    margin: 0 0 0 0;
   }
 }

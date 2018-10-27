@@ -29,7 +29,7 @@
   margin-bottom: 45px;
 }
 
-@media (min-width: 772px) {
+@media (min-width: 768px) {
   .reviews {
     border: 0;
     margin-bottom: 19px;
@@ -41,8 +41,10 @@
       height: 41px;
       background-image: url("../img/zigzag-line-desktop-svg.svg");
       background-repeat: repeat-x;
-      background-size: auto 15px;
-      background-position: 288px 17px;
+      background-size: 100%;
+      background-position: left;
+      max-width: 768px;
+      margin: 0 auto;
     }
   }
 
@@ -76,6 +78,11 @@
 @media (min-width: 1150px) {
   .reviews {
     margin-bottom: 67px;
+
+    &::after {
+      background-position: 288px 17px;
+      max-width: 1050px;
+    }
   }
 
   .reviews__inner {

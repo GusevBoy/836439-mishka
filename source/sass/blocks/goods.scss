@@ -5,7 +5,7 @@
 
 .goods__inner {
   @include container;
-  padding: 0 30px;
+  // padding: 0 30px;
 }
 
 .goods__item {
@@ -24,11 +24,12 @@
 }
 
 .goods__content {
-  padding: 26px 28px 27px 27px;
+  padding: 26px 28px 25px 27px;
   border: 1px solid $tear;
 }
 
 .goods__title {
+  display: block;
   color: #000000;
   font-size: 17px;
   font-weight: bold;
@@ -91,6 +92,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 26px 28px 27px 27px;
   }
 
   .goods__title {
@@ -120,5 +122,50 @@
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .goods__inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .goods__item {
+    display: block;
+    max-width: 316px;
+    margin-bottom: 0;
+    border: 1px solid #ececec;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:last-child .goods__details {
+      margin-bottom: 13px;
+    }
+  }
+
+  .goods__img {
+    max-width: 316px;
+    height: auto;
+  }
+
+  .goods__details {
+    padding: 0;
+    margin-bottom: 37px;
+  }
+
+  .goods__content {
+    border: 0;
+  }
+
+  .goods__price {
+    margin: 10px 0 0 0;
+  }
+
+  .goods__icon {
+    margin: 9px 5px 0 0;
   }
 }

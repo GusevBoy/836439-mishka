@@ -1,8 +1,15 @@
+// .site-nav {
+//   display: none;
+// }
+//
+// .user-nav {
+//   display: none;
+// }
+
 .social {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 30px;
   list-style: none;
   margin-bottom: 23px;
   padding: 25px 0 21px 0;
@@ -39,6 +46,8 @@
 
 @media (min-width: 768px) {
   .social {
-    padding: 9px 0 0 75px;
+    padding: 0 0 0 75px;
+    border: 0;
+    margin: 7px 0 0 0;
   }
 }

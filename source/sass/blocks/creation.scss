@@ -1,11 +1,12 @@
 .creation {
   box-sizing: border-box;
-
-  margin-bottom: 57px;
+  margin-bottom: 91px;
 }
 
 .creation__inner {
   @include container;
+  padding-top: 97px;
+  position: relative;
 }
 
 .creation-video {
@@ -21,13 +22,14 @@
 }
 
 .creation__title {
-  position: relative;
   color: #000000;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
   padding: 24px 0 25px 90px;
   margin: 0;
+  position: absolute;
+  top: 1px;
 }
 
 .creation__video {
@@ -62,6 +64,7 @@
   line-height: 24px;
   padding: 0 40px 0 35px;
   margin-bottom: 26px;
+  padding-top: 2px;
 }
 
 .creation__button {
@@ -82,13 +85,16 @@
   .creation__icon {
     left: 42px;
     top: 8px;
+    color: $seafoam;
   }
 
   .creation__inner {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 668px;
     border: 1px solid $tear;
+    padding-top: 0;
   }
 
   .creation__video {
@@ -99,6 +105,7 @@
     font-size: 20px;
     line-height: 24px;
     padding: 13px 0 32px 107px;
+    position: relative;
   }
 
   .creation__desc {
@@ -115,5 +122,48 @@
   .creation__button {
     min-width: 584px;
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .creation__inner {
+    display: flex;
+    flex-direction: row;
+    max-width: 1050px;
+    min-height: 455px;
+  }
+
+
+  .creation__info {
+    margin-left: 79px;
+    max-width: 230px;
+    padding-top: 42px;
+  }
+
+  .creation__title {
+    padding: 55px 0 0 0;
+  }
+
+  .creation__icon {
+    left: 0;
+    top: 0;
+  }
+
+  .creation__desc {
+    padding: 33px 0 0 0;
+    margin-bottom: 46px;
+  }
+
+  .creation__video {
+    margin: 0;
+  }
+
+  .creation__img {
+    width: 682px;
+    height: 455px;
+  }
+
+  .creation__button {
+    min-width: 100%;
   }
 }

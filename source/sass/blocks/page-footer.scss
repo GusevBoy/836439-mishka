@@ -28,14 +28,14 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    padding: 0;
+    padding: 0 0 31px 0;
   }
 
   .page-footer__inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 51px 46px 0 51px;
+    padding: 50px 46px 0 50px;
   }
 
   .page-footer__logo {
