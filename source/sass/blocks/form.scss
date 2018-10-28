@@ -312,6 +312,7 @@
     margin-bottom: 49px;
     padding-right: 110px;
     width: 920px;
+
     &:last-child {
       margin-bottom: 45px;
     }
@@ -324,9 +325,6 @@
   .form__item_color {
     width: 100%;
     margin: 0 0 49px 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 0;
     padding: 50px 0 24px 0;
     box-sizing: border-box;
   }
@@ -342,11 +340,7 @@
 
   .form__item_inner .form__title {
     left: -5px;
-    top:   14px;
-  }
-
-  .form__fildset {
-    padding-right: 90px;
+    top: 14px;
   }
 
   .form__row {
@@ -354,6 +348,7 @@
   }
 
   .form__fildset {
+    padding-right: 90px;
 
     &:last-child {
       margin-bottom: 21px;

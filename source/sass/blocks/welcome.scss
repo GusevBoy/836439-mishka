@@ -84,14 +84,14 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 320px), (min-resolution: 1.5dppx) and (min-width: 320px) {
+@media (min-resolution: 1.5dppx) and (min-width: 320px) {
   .welcome_toys {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: auto 75%;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+@media (min-resolution: 1.5dppx) and (min-width: 768px) {
   .welcome_toys {
     background-size: auto;
   }
