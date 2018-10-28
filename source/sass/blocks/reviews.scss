@@ -1,0 +1,123 @@
+.reviews {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag-line-desktop-svg.svg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-position: left;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.reviews__inner {
+  position: relative;
+
+  @include container;
+}
+
+.reviews__slider {
+  margin-bottom: 29px;
+}
+
+.reviews__title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.reviews__button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 14px 0;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    border: 0;
+    margin-bottom: 19px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 41px;
+      background-image: url("../img/zigzag-line-desktop-svg.svg");
+      background-repeat: repeat-x;
+      background-size: 100%;
+      background-position: left;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+
+  .reviews__inner {
+    padding: 108px 51px 45px 51px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 51px;
+  }
+
+  .reviews__title {
+    margin-bottom: 49px;
+  }
+
+  .reviews__slider {
+    margin-bottom: 0;
+  }
+
+  .reviews__button {
+    max-width: 175px;
+    position: absolute;
+    margin: 0;
+    top: 110px;
+    right: 52px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .reviews {
+    margin-bottom: 67px;
+
+    &::after {
+      background-position: 288px 17px;
+      max-width: 1050px;
+    }
+  }
+
+  .reviews__inner {
+    max-width: 1050px;
+    padding: 72px 51px 93px 172px;
+  }
+
+  .reviews__button {
+    top: 80px;
+    right: 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+  .reviews__inner {
+    background-image: url("../img/review@2x.jpg");
+    background-size: 46%;
+  }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+  .reviews__inner {
+    background-size: 33%;
+  }
+}

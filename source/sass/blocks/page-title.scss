@@ -1,0 +1,41 @@
+.page-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #010000;
+  line-height: 30px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 30px;
+  padding-bottom: 75px;
+  max-width: 260px;
+}
+
+.page-title_index {
+  padding-bottom: 121px;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    margin: 0;
+    color: #000000;
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 500px;
+    padding-bottom: 374px;
+  }
+
+  .welcome_common .page-title {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-title {
+    color: #000000;
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 700px;
+    padding-bottom: 359px;
+  }
+}

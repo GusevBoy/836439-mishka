@@ -1,0 +1,124 @@
+.popup-adding {
+  box-sizing: border-box;
+  width: 320px;
+  background-color: #ffffff;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 36px 0 46px 0;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+}
+
+.popup-adding__inner {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.popup-adding__title {
+  max-width: 148px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0 auto 25px auto;
+  text-transform: uppercase;
+}
+
+.popup-adding__desc {
+  font-size: 15px;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 27px;
+}
+
+.popup-adding__radio-size {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+}
+
+.popup-adding__button {
+  width: 100%;
+  height: 52px;
+  border: 0;
+  padding: 0;
+  background-color: $seafoam;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.radio-size__label {
+  margin-right: 7px;
+}
+
+.radio-size__square {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+  margin: 0 7px 0 0;
+  border: 2px solid rgba(#444444, .1);
+
+  &:hover {
+    border-color: rgba(#444444, .3);
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.radio-size__input {
+  display: none;
+}
+
+.radio-size__input:checked + .radio-size__square {
+  border-color: #62d1ba;
+}
+
+.radio-size__desc {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .popup-adding {
+    width: 566px;
+    padding: 51px 0 46px 0;
+  }
+
+  .popup-adding__inner {
+    max-width: 354px;
+  }
+
+  .popup-adding__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 32px;
+    max-width: none;
+  }
+
+  .popup-adding__desc {
+    font-size: 17px;
+    margin-bottom: 26px;
+  }
+
+  .radio-size__square {
+    width: 112px;
+    height: 52px;
+  }
+}
