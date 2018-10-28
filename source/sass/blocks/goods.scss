@@ -11,6 +11,14 @@
 .goods__item {
   margin-bottom: 30px;
   text-align: left;
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .goods__item:last-child {
@@ -85,7 +93,7 @@
 
   .goods__item {
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   .goods__content {
@@ -118,10 +126,15 @@
   }
 
   .goods__price {
-    margin: 10px 0 0 7px;
+    margin: 10px 0 0 4px;
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
+  }
+
+  .goods__icon {
+    margin: 0;
+    padding: 6px 0 0 3px;
   }
 }
 

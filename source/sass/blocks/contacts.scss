@@ -66,9 +66,18 @@
   margin: 0 -30px;
   margin-bottom: 39px;
   background-color: #f3e8d9;
+  position: relative;
+}
+
+.contacts__iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 457px;
 }
 
 .contacts__img {
+  width: 100%;
   margin: 0 auto;
   display: block;
   height: 457px;
@@ -143,7 +152,7 @@
 @media (min-width: 1150px) {
   .contacts {
     padding-top: 0;
-    margin-bottom: 104px;
+    margin-bottom: 63px;
   }
 
   .contacts__inner {
@@ -173,7 +182,7 @@
   }
 
   .contacts__item {
-    margin-bottom: 28px;
+    margin-bottom: 80px;
     width: 100%;
 
     &:first-child {
@@ -196,6 +205,7 @@
 
   .contacts__button {
     min-width: auto;
+    margin-left: 4px;
     margin: 0 0 0 0;
   }
 }

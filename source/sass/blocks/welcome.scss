@@ -4,7 +4,7 @@
 }
 
 .welcome_common {
-  padding: 71px 0 75px 0;
+  padding: 71px 0 0 0;
 }
 
 .welcome__inner {
@@ -23,27 +23,26 @@
 @media (min-width: 768px) {
   .welcome {
     position: relative;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/zigzag-fill-desktop-svg.svg");
+      background-position: center;
+      background-size: auto 23px;
+      background-repeat: repeat;
+    }
   }
 
   .welcome__inner {
     padding: 0 50px;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: -10px;
-    width: 100%;
-    height: 23px;
-    background-image: url("../img/zigzag-fill-desktop-svg.svg");
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: repeat;
   }
 
   .welcome_toys {
@@ -59,7 +58,7 @@
 
   .welcome_common {
     padding: 96px 0 81px 0;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 }
 
@@ -82,5 +81,18 @@
   .welcome_common {
     padding-bottom: 98px;
     margin-bottom: 101px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 320px), (min-resolution: 1.5dppx) and (min-width: 320px) {
+  .welcome_toys {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 75%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+  .welcome_toys {
+    background-size: auto;
   }
 }

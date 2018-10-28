@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
   </head>
   <body class="page">
@@ -276,7 +276,9 @@
             </picture>
           </a>
           <button class="page-header__toggle" type="button">
-            <span class="page-header__toggle-gamburger"></span><!-- Думаю через псевдоклассы сделать бургер-->
+            <span class="page-header__toggle-close"></span>
+            <!-- Класс page-header__toggle-close отображает крестик для заыкрытия menu-->
+            <!-- Класс page-header__toggle-open отображает гамбургер для открытия menu-->
           </button>
         </div>
         <ul class="page-header__site-nav site-nav">
@@ -331,9 +333,9 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="welcome welcome_toys"> <!-- Может через  section? -->
+      <section class="welcome welcome_toys">
         <div class="welcome__inner">
-            <h1 class="page-title">
+            <h1 class="page-title page-title_index ">
               Милые штуки ручной работы&nbsp;для&nbsp;дома
             </h1>
           <nav class="welcome__goods-nav goods-nav">
@@ -381,38 +383,12 @@
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-                <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзины" class="goods-best__img">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзины" class="goods-best__img">
               </picture>
               <span class="goods-best__price">Цена: 990 руб.</span>
             </div>
             <button class="goods-best__button button">
               ЗАКАЗАТЬ
-            </button>
-          </div>
-          <!-- ПЕРЕМЕСТИ ВНИЗ ПОПАП -->
-          <div class="popup-adding hidden">
-            <h2 class="popup-adding__title title">
-              Добавить в корзину
-            </h2>
-            <p class="popup-adding__desc">
-              Выберите размер:
-            </p>
-            <div class="popup-adding__radio radio">
-              <label class="radio__label radio__label_square">
-                <input class="radio__input" type="radio" name="size">
-                <span class="radio__desc">S</span>
-              </label>
-              <label class="radio__label radio__label_square">
-                <input class="radio__input" type="radio" name="size">
-                <span class="radio__desc">M</span>
-              </label>
-              <label class="radio__label radio__label_square">
-                <input class="radio__input" type="radio" name="size">
-                <span class="radio__desc">L</span>
-              </label>
-            </div>
-            <button class="popup-adding__button button_seafoam">
-              Добавить
             </button>
           </div>
         </div>
@@ -508,6 +484,9 @@
             </li>
           </ul>
           <div class="contacts__map">
+
+              <iframe class="contacts__iframe"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.611081472206!2d30.32207017087426!3d59.93859545370804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1540662772006" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
             <picture class="contacts__picture">
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
@@ -550,13 +529,14 @@
             </a>
           </li>
         </ul>
-        <a href="htmlacademy.ru" class="signature">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="signature">
           <span class="signature__desc">Разработано</span>
           <svg class="signature__svg" width="27" height="34">
             <use xlink:href="#htmlacademy-logo"></use>
           </svg>
         </a>
       </div>
-    </footer>
+    </<footer><link rel="stylesheet" href="css/style.min.css"></footer>  >
+
   </body>
 </html>

@@ -6,6 +6,7 @@
 .creation__inner {
   @include container;
   padding-top: 97px;
+  border: 1px solid $tear;
   position: relative;
 }
 
@@ -55,6 +56,15 @@
   background-size: auto;
   background-color: transparent;
   cursor: pointer;
+  overflow: visible;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .creation__desc {
@@ -93,12 +103,13 @@
     display: flex;
     flex-direction: column;
     max-width: 668px;
-    border: 1px solid $tear;
     padding-top: 0;
   }
 
   .creation__video {
     order: -1;
+    width: 668px;
+    height: 455px;
   }
 
   .creation__title {
@@ -133,6 +144,10 @@
     min-height: 455px;
   }
 
+  .creation__video {
+    width: 682px;
+    height: 455px;
+  }
 
   .creation__info {
     margin-left: 79px;

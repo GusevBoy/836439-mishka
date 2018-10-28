@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
   </head>
   <body class="page">
     <svg xmlns="http://www.w3.org/2000/svg" class="page__svg" width="32" height="32">
@@ -173,40 +174,42 @@
             </div>
           </fieldset>
           <fieldset class="form__item form__item_color">
-            <legend class="form__title">
-              <span class="form__text">Цвет</span>
-            </legend>
-            <div class="form__checkbox checkbox">
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="colors" checked>
-                <span class="checkbox__min-square"></span>
-                <span class="checkbox__desc">Белый</span>
-              </label>
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="colors" checked>
-                <span class="checkbox__min-square"></span>
-                <span class="checkbox__desc">Серый</span>
-              </label>
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="colors">
-                <span class="checkbox__min-square"></span>
-                <span class="checkbox__desc">«Тиффани»</span>
-              </label>
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="colors">
-                <span class="checkbox__min-square"></span>
-                <span class="checkbox__desc">Черный</span>
-              </label>
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="colors">
-                <span class="checkbox__min-square"></span>
-                <span class="checkbox__desc">Розовый</span>
-              </label>
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="colors">
-                <span class="checkbox__min-square"></span>
-                <span class="checkbox__desc">Оранжевый</span>
-              </label>
+            <div class="form__item_inner">
+              <legend class="form__title">
+                <span class="form__text">Цвет</span>
+              </legend>
+              <div class="form__checkbox checkbox">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="colors" checked>
+                  <span class="checkbox__min-square"></span>
+                  <span class="checkbox__desc">Белый</span>
+                </label>
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="colors" checked>
+                  <span class="checkbox__min-square"></span>
+                  <span class="checkbox__desc">Серый</span>
+                </label>
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="colors">
+                  <span class="checkbox__min-square"></span>
+                  <span class="checkbox__desc">«Тиффани»</span>
+                </label>
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="colors">
+                  <span class="checkbox__min-square"></span>
+                  <span class="checkbox__desc">Черный</span>
+                </label>
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="colors">
+                  <span class="checkbox__min-square"></span>
+                  <span class="checkbox__desc">Розовый</span>
+                </label>
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" name="colors">
+                  <span class="checkbox__min-square"></span>
+                  <span class="checkbox__desc">Оранжевый</span>
+                </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__item">
@@ -215,40 +218,42 @@
             </legend>
             <div class="form__name">
               <span class="form__info">Имя:</span>
-              <input type="text" class="form__input" placeholder="Введите ваше имя*">
+              <input type="text" class="form__input" name="name" placeholder="Введите ваше имя*">
             </div>
             <div class="form__name">
               <span class="form__info">Фамилия:</span>
-              <input type="text" class="form__input" placeholder="Укажите фамилию*">
+              <input type="text" class="form__input" name="surname" placeholder="Укажите фамилию*">
             </div>
             <div class="form__name">
               <span class="form__info">Отчество:</span>
-              <input type="text" class="form__input" placeholder="Отчество, если желаете">
+              <input type="text" class="form__input" name="post" placeholder="Отчество, если желаете">
             </div>
           </fieldset>
           <div class="form__item form__item_color">
-            <fieldset class="form__fildset">
-              <legend class="form__title form__title_call">
-                <span class="form__text">тел</span>
-              </legend>
-              <div class="form__row">
-                <input type="text" class="form__input form__input_call" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <svg class="form__svg-phone" width="25" height="24">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </div>
-            </fieldset>
-            <fieldset class="form__fildset">
-              <legend class="form__title form__title_mail">
-                <span class="form__text">E-MAIL</span>
-              </legend>
-              <div class="form__row">
-                <input type="email" class="form__input form__input_mail" placeholder="Ваш Email*">
-                <svg class="form__svg-mail" width="32" height="21">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </div>
-            </fieldset>
+            <div class="form__item_inner">
+              <fieldset class="form__fildset">
+                <legend class="form__title form__title_call">
+                  <span class="form__text">тел</span>
+                </legend>
+                <div class="form__row">
+                  <input type="number" class="form__input form__input_call" name="pfone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <svg class="form__svg-phone" width="25" height="24">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
+              </fieldset>
+              <fieldset class="form__fildset">
+                <legend class="form__title form__title_mail">
+                  <span class="form__text">E-MAIL</span>
+                </legend>
+                <div class="form__row">
+                  <input type="email" class="form__input form__input_mail" name="email" placeholder="Ваш Email*">
+                  <svg class="form__svg-mail" width="32" height="21">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
+              </fieldset>
+            </div>
           </div>
           <fieldset class="form__item">
             <legend class="form__title">
@@ -296,7 +301,7 @@
             </a>
           </li>
         </ul>
-        <a href="htmlacademy.ru" class="signature">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="signature">
           <span class="signature__desc">Разработано</span>
           <svg class="signature__svg" width="27" height="34">
             <use xlink:href="#htmlacademy-logo"></use>
