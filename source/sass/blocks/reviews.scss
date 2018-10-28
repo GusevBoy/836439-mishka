@@ -8,9 +8,8 @@
     height: 6px;
     background-image: url("../img/zigzag-line-desktop-svg.svg");
     background-repeat: repeat-x;
-    background-size: 100%;
+    background-size: auto 6px;
     background-position: left;
-    max-width: 320px;
     margin: 0 auto;
   }
 }
@@ -53,9 +52,8 @@
       height: 41px;
       background-image: url("../img/zigzag-line-desktop-svg.svg");
       background-repeat: repeat-x;
-      background-size: 100%;
+      background-size: auto 17px;
       background-position: left;
-      max-width: 768px;
       margin: 0 auto;
     }
   }
@@ -63,7 +61,7 @@
   .reviews__inner {
     padding: 108px 51px 45px 51px;
     background-image: url("../img/review@1x.jpg");
-    background-position: 0 100%;
+    background-position: 0 29px;
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 51px;
@@ -93,12 +91,13 @@
 
     &::after {
       background-position: 288px 17px;
-      max-width: 1050px;
+      background-size: auto 23px;
     }
   }
 
   .reviews__inner {
     max-width: 1050px;
+
     padding: 72px 51px 93px 172px;
   }
 
@@ -116,8 +115,9 @@
 }
 
 
-@media (min-resolution: 1.5dppx) and (min-width: 768px) {
+@media (min-resolution: 1.5dppx) and (min-width: 1150px) {
   .reviews__inner {
-    background-size: 33%;
+    background-size: 34%;
+    background-position: 0 0;
   }
 }

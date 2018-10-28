@@ -133,12 +133,16 @@
   }
 
   .goods__icon {
-    margin: 0;
-    padding: 6px 0 0 3px;
+    padding: 0;
+    margin: 0 3px -9px 0;
   }
 }
 
 @media (min-width: 1150px) {
+  .goods {
+    margin-bottom: 57px;
+  }
+
   .goods__inner {
     display: flex;
     align-items: stretch;
@@ -172,6 +176,7 @@
 
   .goods__content {
     border: 0;
+    padding: 26px 28px 27px 27px;
   }
 
   .goods__price {

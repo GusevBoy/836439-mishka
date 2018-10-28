@@ -1,6 +1,6 @@
 .creation {
   box-sizing: border-box;
-  margin-bottom: 91px;
+  margin-bottom: 58px;
 }
 
 .creation__inner {
@@ -20,6 +20,7 @@
   height: 33px;
   left: 32px;
   top: 30px;
+  color: $seafoam;
 }
 
 .creation__title {
@@ -83,7 +84,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 14px 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -94,7 +95,7 @@
 
   .creation__icon {
     left: 42px;
-    top: 8px;
+    top: 14px;
     color: $seafoam;
   }
 
@@ -115,7 +116,7 @@
   .creation__title {
     font-size: 20px;
     line-height: 24px;
-    padding: 13px 0 32px 107px;
+    padding: 19px 0 32px 107px;
     position: relative;
   }
 
@@ -137,6 +138,10 @@
 }
 
 @media (min-width: 1150px) {
+  .creation {
+    margin-bottom: 104px;
+  }
+
   .creation__inner {
     display: flex;
     flex-direction: row;

@@ -79,6 +79,10 @@
   color: inherit;
 }
 
+.goods-nav__svg-toy {
+  right: 27px;
+}
+
 @media (min-width: 768px) {
   .goods-nav__button {
     width: 50%;
@@ -89,5 +93,11 @@
 
   .goods-nav__desc {
     max-width: 90px;
+  }
+
+  .goods-nav__button_seafoam:hover,
+  .goods-nav__button_greeny:hover {
+    bottom: 5px;
+    margin-bottom: -5px;
   }
 }

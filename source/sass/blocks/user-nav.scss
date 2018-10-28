@@ -18,12 +18,13 @@
   padding: 28px 0 26px 76px;
 }
 
-.user-nav__link:hover .user-nav__svg {
-  color: rgba($seafoam, 0.3);
+.user-nav__link:hover .user-nav__svg,
+.user-nav__link:hover .user-nav__svg-search {
+  color: $seafoam;
 }
 
-.user-nav__link:hover .user-nav__svg-search {
-  color: rgba(#63d1bb, 0.3);
+.user-nav__link:active {
+  opacity: 0.3;
 }
 
 .user-nav__text {
