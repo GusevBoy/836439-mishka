@@ -1,6 +1,6 @@
-@import "blocks/common";
-@import "blocks/mixins";
-@import "blocks/variable";
+@import "helpers/common";
+@import "helpers/mixins";
+@import "helpers/variable";
 @import "blocks/page";
 @import "blocks/container";
 @import "blocks/button";
@@ -32,4 +32,4 @@
 @import "blocks/signature";
 @import "blocks/goods";
 @import "blocks/creation";
-@import "blocks/hidden"
+@import "helpers/hidden"
