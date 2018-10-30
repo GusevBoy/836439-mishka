@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -354,8 +356,11 @@
 
             <div class="goods-best__item">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.webp 2x, img/triple-set-desktop@1x.webp 1x">
                 <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-tablet@2x.webp 2x, img/triple-set-tablet@1x.webp 1x">
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+                <source type="image/webp" srcset="img/triple-set-mobile@2x.webp 2x, img/triple-set-mobile@1x.webp 1x">
                 <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзины" class="goods-best__img">
               </picture>
               <span class="goods-best__price">Цена: 990 руб.</span>
@@ -459,8 +464,11 @@
           <div class="contacts__map">
               <iframe class="contacts__iframe"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.611081472206!2d30.32207017087426!3d59.93859545370804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1540662772006" width="400" height="300" style="border:0" allowfullscreen></iframe>
             <picture class="contacts__picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
                 <img src="img/map-mobile@1x.jpg" alt="Найдете нас здесь" class="contacts__img">
             </picture>
           </div>
