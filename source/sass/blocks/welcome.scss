@@ -1,5 +1,9 @@
 .welcome {
+<<<<<<< HEAD
   background-color: #f9f9f9;
+=======
+  background-color: #f1f1f2;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   text-align: center;
 }
 
@@ -13,6 +17,10 @@
 }
 
 .welcome_toys {
+<<<<<<< HEAD
+=======
+  background-color: #f9f9f9;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -84,14 +92,22 @@
   }
 }
 
+<<<<<<< HEAD
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 320px), (min-resolution: 1.5dppx) and (min-width: 320px) {
+=======
+@media (min-resolution: 1.5dppx) and (min-width: 320px) {
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   .welcome_toys {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: auto 75%;
   }
 }
 
+<<<<<<< HEAD
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+=======
+@media (min-resolution: 1.5dppx) and (min-width: 768px) {
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   .welcome_toys {
     background-size: auto;
   }

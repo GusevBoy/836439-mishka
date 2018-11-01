@@ -1,5 +1,9 @@
 .popup-overlay {
+<<<<<<< HEAD
   display: block;
+=======
+  display: none;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   position: fixed;
   top: 0;
   left: 0;
@@ -8,3 +12,10 @@
   height: 100%;
   background-color: rgba(#ffffff, 0.9);
 }
+<<<<<<< HEAD
+=======
+
+.popup-overlay_show {
+  display: block;
+}
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e

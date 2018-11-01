@@ -13,11 +13,19 @@
   text-align: left;
 
   &:hover {
+<<<<<<< HEAD
     box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
     box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+=======
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   }
 }
 
@@ -133,12 +141,24 @@
   }
 
   .goods__icon {
+<<<<<<< HEAD
     margin: 0;
     padding: 6px 0 0 3px;
+=======
+    padding: 0;
+    margin: 0 3px -9px 0;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   }
 }
 
 @media (min-width: 1150px) {
+<<<<<<< HEAD
+=======
+  .goods {
+    margin-bottom: 57px;
+  }
+
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   .goods__inner {
     display: flex;
     align-items: stretch;
@@ -172,6 +192,10 @@
 
   .goods__content {
     border: 0;
+<<<<<<< HEAD
+=======
+    padding: 26px 28px 27px 27px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   }
 
   .goods__price {

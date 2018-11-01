@@ -182,11 +182,20 @@
   }
 
   .contacts__item {
+<<<<<<< HEAD
     margin-bottom: 80px;
     width: 100%;
 
     &:first-child {
       padding: 0;
+=======
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+      padding: 0;
+      margin-bottom: 78px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
     }
   }
 
@@ -205,7 +214,11 @@
 
   .contacts__button {
     min-width: auto;
+<<<<<<< HEAD
     margin-left: 4px;
     margin: 0 0 0 0;
+=======
+    margin: 0 0 0 4px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   }
 }

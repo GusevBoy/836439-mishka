@@ -8,10 +8,17 @@
     height: 6px;
     background-image: url("../img/zigzag-line-desktop-svg.svg");
     background-repeat: repeat-x;
+<<<<<<< HEAD
     background-size: 100%;
     background-position: left;
     max-width: 320px;
     margin: 0 auto;
+=======
+    background-size: auto 6px;
+    background-position: left;
+    margin: 0 auto;
+    max-width: 320px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   }
 }
 
@@ -53,17 +60,28 @@
       height: 41px;
       background-image: url("../img/zigzag-line-desktop-svg.svg");
       background-repeat: repeat-x;
+<<<<<<< HEAD
       background-size: 100%;
       background-position: left;
       max-width: 768px;
       margin: 0 auto;
+=======
+      background-size: auto 17px;
+      background-position: left;
+      margin: 0 auto;
+      max-width: 768px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
     }
   }
 
   .reviews__inner {
     padding: 108px 51px 45px 51px;
     background-image: url("../img/review@1x.jpg");
+<<<<<<< HEAD
     background-position: 0 100%;
+=======
+    background-position: 0 29px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 51px;
@@ -93,12 +111,20 @@
 
     &::after {
       background-position: 288px 17px;
+<<<<<<< HEAD
+=======
+      background-size: auto 23px;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
       max-width: 1050px;
     }
   }
 
   .reviews__inner {
     max-width: 1050px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
     padding: 72px 51px 93px 172px;
   }
 
@@ -108,7 +134,11 @@
   }
 }
 
+<<<<<<< HEAD
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+=======
+@media (min-resolution: 1.5dppx) and (min-width: 768px) {
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   .reviews__inner {
     background-image: url("../img/review@2x.jpg");
     background-size: 46%;
@@ -116,8 +146,15 @@
 }
 
 
+<<<<<<< HEAD
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .reviews__inner {
     background-size: 33%;
+=======
+@media (min-resolution: 1.5dppx) and (min-width: 1150px) {
+  .reviews__inner {
+    background-size: 34%;
+    background-position: 0 0;
+>>>>>>> 5de88d15657f2bf1ef5dfcf8a748731f5f40108e
   }
 }
